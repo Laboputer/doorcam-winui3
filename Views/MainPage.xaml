@@ -7,32 +7,70 @@
     xmlns:local="using:doorcamPoC"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Page.Content>
-        <StackPanel
-            HorizontalAlignment="Center"
-            Spacing="25"
-            VerticalAlignment="Center">
-            <TextBlock
-                FontSize="24"
-                HorizontalAlignment="Center"
-                Style="{StaticResource MyLabel}"
-                Text="Hello, World!" />
-            <TextBlock
-                FontSize="20"
-                HorizontalAlignment="Center"
-                Style="{StaticResource MyLabel}"
-                Text="Welcome to WinUI 3!" />
-            <TextBlock
-                x:Name="txtCount"
-                FontSize="16"
-                HorizontalAlignment="Center"
-                Style="{StaticResource MyLabel}"
-                Text="Current count: 0" />
-            <Button
-                Click="OnCountClicked"
-                Content="Click Me"
-                HorizontalAlignment="Center"
-                Style="{StaticResource PrimaryAction}" />
-        </StackPanel>
-    </Page.Content>
+
+    <Grid Background="White">
+        <ScrollViewer>
+            <StackPanel Margin="24" Spacing="24">
+                <!-- Header -->
+                <StackPanel Spacing="8">
+                    <TextBlock Text="🚪 DoorCam AI Analyzer" FontSize="28" FontWeight="SemiBold" Foreground="Black"/>
+                    <TextBlock Text="Upload your door camera video to get an AI-powered summary of daily events" FontSize="16" Foreground="Gray" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- File Upload Section -->
+                <Border Background="LightGray" CornerRadius="12" Padding="24" BorderThickness="1" BorderBrush="Gray">
+                    <StackPanel Spacing="16">
+                        <TextBlock Text="📹 Video Upload" FontSize="20" FontWeight="SemiBold"/>
+                        <!-- Drag & Drop Area -->
+                        <Border x:Name="DropZone" Background="White" CornerRadius="8" Padding="32" BorderThickness="2" BorderBrush="Gray">
+                            <StackPanel HorizontalAlignment="Center" Spacing="12">
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="" FontSize="48" Foreground="Black"/>
+                                <TextBlock Text="Drag drop your .mp4 file here" FontSize="16" HorizontalAlignment="Center"/>
+                                <TextBlock Text="or click to browse" FontSize="14" HorizontalAlignment="Center" Foreground="Gray"/>
+                            </StackPanel>
+                        </Border>
+                        <!-- File Info -->
+                        <StackPanel x:Name="FileInfoPanel" Visibility="Collapsed" Spacing="8">
+                            <TextBlock x:Name="FileNameText" FontWeight="SemiBold"/>
+                            <TextBlock x:Name="FileSizeText" FontSize="12" Foreground="Gray"/>
+                        </StackPanel>
+                        <!-- Upload Button -->
+                        <Button x:Name="UploadButton" Content="Choose Video File" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Analysis Progress Section -->
+                <Border x:Name="ProgressSection" Background="LightGray" CornerRadius="12" Padding="24" BorderThickness="1" BorderBrush="Gray" Visibility="Collapsed">
+                    <StackPanel Spacing="16">
+                        <TextBlock Text="🤖 AI Analysis" FontSize="20" FontWeight="SemiBold"/>
+                        <ProgressRing x:Name="AnalysisProgress" IsActive="True" Width="32" Height="32"/>
+                        <TextBlock x:Name="ProgressText" Text="Analyzing video frames..." HorizontalAlignment="Center"/>
+                        <ProgressBar x:Name="ProgressBar" Minimum="0" Maximum="100" Value="0"/>
+                        <TextBlock x:Name="ProgressDetails" Text="" HorizontalAlignment="Center" FontSize="12" Foreground="Gray"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Results Section -->
+                <Border x:Name="ResultsSection" Background="LightGray" CornerRadius="12" Padding="24" BorderThickness="1" BorderBrush="Gray" Visibility="Collapsed">
+                    <StackPanel Spacing="16">
+                        <TextBlock Text="📋 Daily Summary" FontSize="20" FontWeight="SemiBold"/>
+                        <ScrollViewer MaxHeight="400">
+                            <TextBlock x:Name="SummaryText" TextWrapping="Wrap" LineHeight="24" FontSize="14"/>
+                        </ScrollViewer>
+                        <Button x:Name="CopyButton" Content="Copy to Clipboard" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Error Section -->
+                <Border x:Name="ErrorSection" Background="#FFEBEB" CornerRadius="12" Padding="24" BorderThickness="1" BorderBrush="Red" Visibility="Collapsed">
+                    <StackPanel Spacing="12">
+                        <TextBlock Text="❌ Error" FontSize="20" FontWeight="SemiBold" Foreground="Red"/>
+                        <TextBlock x:Name="ErrorText" TextWrapping="Wrap"/>
+                        <Button x:Name="RetryButton" Content="Try Again" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
 </Page>

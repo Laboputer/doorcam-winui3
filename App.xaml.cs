@@ -1,3 +1,4 @@
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Navigation;
 
 namespace doorcamPoC
@@ -7,7 +8,7 @@ namespace doorcamPoC
     /// </summary>
     public partial class App : Application
     {
-        private Window window = Window.Current;
+        public static Window MainWindow { get; private set; }
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -23,19 +24,20 @@ namespace doorcamPoC
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs e)
         {
-            window ??= new Window();
+            MainWindow = new Window();
+            MainWindow.Title = "DoorCam AI Analyzer";
 
-            if (window.Content is not Frame rootFrame)
+            if (MainWindow.Content is not Frame rootFrame)
             {
                 rootFrame = new Frame();
                 rootFrame.NavigationFailed += OnNavigationFailed;
-                window.Content = rootFrame;
+                MainWindow.Content = rootFrame;
             }
 
             _ = rootFrame.Navigate(typeof(MainPage), e.Arguments);
-            window.Activate();
+            MainWindow.Activate();
         }
 
         /// <summary>

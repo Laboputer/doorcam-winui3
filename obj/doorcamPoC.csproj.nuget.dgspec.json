@@ -50,6 +50,22 @@
         "net9.0-windows10.0.19041": {
           "targetAlias": "net9.0-windows10.0.19041.0",
           "dependencies": {
+            "CommunityToolkit.WinUI.UI.Controls": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "CommunityToolkit.WinUI.UI.Media": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
+            "Microsoft.AI.DirectML": {
+              "target": "Package",
+              "version": "[1.15.1, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
             "Microsoft.Web.WebView2": {
               "target": "Package",
               "version": "[1.*, )"

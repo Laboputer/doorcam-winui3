@@ -226,7 +226,7 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[14];
+            _typeNameTable = new string[21];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -234,15 +234,22 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
             _typeNameTable[4] = "Windows.UI.Color";
             _typeNameTable[5] = "System.ValueType";
             _typeNameTable[6] = "Byte";
-            _typeNameTable[7] = "doorcamPoC.Views.MainPage";
-            _typeNameTable[8] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[9] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[7] = "Microsoft.UI.Xaml.Controls.ProgressRing";
+            _typeNameTable[8] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[9] = "Double";
+            _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
             _typeNameTable[11] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[12] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[13] = "Int32";
+            _typeNameTable[12] = "Microsoft.UI.Xaml.Controls.ProgressBar";
+            _typeNameTable[13] = "Microsoft.UI.Xaml.Controls.Primitives.RangeBase";
+            _typeNameTable[14] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
+            _typeNameTable[15] = "doorcamPoC.Views.MainPage";
+            _typeNameTable[16] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[18] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[19] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[20] = "Int32";
 
-            _typeTable = new global::System.Type[14];
+            _typeTable = new global::System.Type[21];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -250,13 +257,20 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
             _typeTable[4] = typeof(global::Windows.UI.Color);
             _typeTable[5] = typeof(global::System.ValueType);
             _typeTable[6] = typeof(global::System.Byte);
-            _typeTable[7] = typeof(global::doorcamPoC.Views.MainPage);
-            _typeTable[8] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[9] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[7] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
+            _typeTable[8] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[9] = typeof(global::System.Double);
+            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
             _typeTable[11] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[12] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[13] = typeof(global::System.Int32);
+            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
+            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.RangeBase);
+            _typeTable[14] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
+            _typeTable[15] = typeof(global::doorcamPoC.Views.MainPage);
+            _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[19] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[20] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -292,15 +306,21 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
         }
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
-        private object Activate_7_MainPage() { return new global::doorcamPoC.Views.MainPage(); }
-        private object Activate_10_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_7_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
+        private object Activate_12_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
+        private object Activate_15_MainPage() { return new global::doorcamPoC.Views.MainPage(); }
+        private object Activate_18_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_Color() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Color).TypeHandle);
         private void StaticInitializer_5_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
         private void StaticInitializer_6_Byte() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Byte).TypeHandle);
-        private void StaticInitializer_7_MainPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::doorcamPoC.Views.MainPage).TypeHandle);
-        private void StaticInitializer_10_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_12_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_7_ProgressRing() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing).TypeHandle);
+        private void StaticInitializer_10_ProgressRingTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings).TypeHandle);
+        private void StaticInitializer_12_ProgressBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar).TypeHandle);
+        private void StaticInitializer_14_ProgressBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings).TypeHandle);
+        private void StaticInitializer_15_MainPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::doorcamPoC.Views.MainPage).TypeHandle);
+        private void StaticInitializer_18_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_19_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -308,7 +328,7 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_12_IList(object instance, object item)
+        private void VectorAdd_19_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -369,26 +389,80 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 7:   //  doorcamPoC.Views.MainPage
+            case 7:   //  Microsoft.UI.Xaml.Controls.ProgressRing
+                userType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_7_ProgressRing;
+                userType.StaticInitializer = StaticInitializer_7_ProgressRing;
+                userType.AddMemberName("IsActive");
+                userType.AddMemberName("IsIndeterminate");
+                userType.AddMemberName("Maximum");
+                userType.AddMemberName("Minimum");
+                userType.AddMemberName("TemplateSettings");
+                userType.AddMemberName("Value");
+                xamlType = userType;
+                break;
+
+            case 8:   //  Microsoft.UI.Xaml.Controls.Control
+                xamlType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  Double
+                xamlType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
+                userType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.StaticInitializer = StaticInitializer_10_ProgressRingTemplateSettings;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Microsoft.UI.Xaml.DependencyObject
+                xamlType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  Microsoft.UI.Xaml.Controls.ProgressBar
+                userType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.RangeBase"));
+                userType.Activator = Activate_12_ProgressBar;
+                userType.StaticInitializer = StaticInitializer_12_ProgressBar;
+                userType.AddMemberName("IsIndeterminate");
+                userType.AddMemberName("ShowError");
+                userType.AddMemberName("ShowPaused");
+                userType.AddMemberName("TemplateSettings");
+                xamlType = userType;
+                break;
+
+            case 13:   //  Microsoft.UI.Xaml.Controls.Primitives.RangeBase
+                xamlType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 14:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
+                userType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.StaticInitializer = StaticInitializer_14_ProgressBarTemplateSettings;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 15:   //  doorcamPoC.Views.MainPage
                 userType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_MainPage;
-                userType.StaticInitializer = StaticInitializer_7_MainPage;
+                userType.Activator = Activate_15_MainPage;
+                userType.StaticInitializer = StaticInitializer_15_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Microsoft.UI.Xaml.Controls.Page
+            case 16:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 17:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 18:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_10_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_10_TreeViewNode;
+                userType.Activator = Activate_18_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_18_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -400,19 +474,15 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 11:   //  Microsoft.UI.Xaml.DependencyObject
-                xamlType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 12:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 19:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_12_IList;
-                userType.CollectionAdd = VectorAdd_12_IList;
+                userType.StaticInitializer = StaticInitializer_19_IList;
+                userType.CollectionAdd = VectorAdd_19_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Int32
+            case 20:   //  Int32
                 xamlType = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -429,6 +499,18 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
                     var otherProviders = new global::System.Collections.Generic.List<global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider provider;
                     provider = new global::Microsoft.UI.Xaml.XamlTypeInfo.XamlControlsXamlMetaDataProvider() as global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::CommunityToolkit.WinUI.UI.Controls.CommunityToolkit_WinUI_UI_Controls_Core_XamlTypeInfo.XamlMetaDataProvider() as global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::CommunityToolkit.WinUI.UI.Controls.CommunityToolkit_WinUI_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider() as global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::CommunityToolkit.WinUI.UI.Controls.CommunityToolkit_WinUI_UI_Controls_Input_XamlTypeInfo.XamlMetaDataProvider() as global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::CommunityToolkit.WinUI.UI.Controls.CommunityToolkit_WinUI_UI_Controls_Layout_XamlTypeInfo.XamlMetaDataProvider() as global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::CommunityToolkit.WinUI.UI.Controls.CommunityToolkit_WinUI_UI_Controls_Markdown_XamlTypeInfo.XamlMetaDataProvider() as global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::CommunityToolkit.WinUI.UI.Controls.CommunityToolkit_WinUI_UI_Controls_Media_XamlTypeInfo.XamlMetaDataProvider() as global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 
                     _otherProviders = otherProviders;
                 }
@@ -524,52 +606,142 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
             var that = (global::Windows.UI.Color)instance;
             that.B = (global::System.Byte)Value;
         }
-        private object get_5_TreeViewNode_Children(object instance)
+        private object get_5_ProgressRing_IsActive(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.IsActive;
+        }
+        private void set_5_ProgressRing_IsActive(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.IsActive = (global::System.Boolean)Value;
+        }
+        private object get_6_ProgressRing_IsIndeterminate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.IsIndeterminate;
+        }
+        private void set_6_ProgressRing_IsIndeterminate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.IsIndeterminate = (global::System.Boolean)Value;
+        }
+        private object get_7_ProgressRing_Maximum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Maximum;
+        }
+        private void set_7_ProgressRing_Maximum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Maximum = (global::System.Double)Value;
+        }
+        private object get_8_ProgressRing_Minimum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Minimum;
+        }
+        private void set_8_ProgressRing_Minimum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Minimum = (global::System.Double)Value;
+        }
+        private object get_9_ProgressRing_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.TemplateSettings;
+        }
+        private object get_10_ProgressRing_Value(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Value;
+        }
+        private void set_10_ProgressRing_Value(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Value = (global::System.Double)Value;
+        }
+        private object get_11_ProgressBar_IsIndeterminate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
+            return that.IsIndeterminate;
+        }
+        private void set_11_ProgressBar_IsIndeterminate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
+            that.IsIndeterminate = (global::System.Boolean)Value;
+        }
+        private object get_12_ProgressBar_ShowError(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
+            return that.ShowError;
+        }
+        private void set_12_ProgressBar_ShowError(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
+            that.ShowError = (global::System.Boolean)Value;
+        }
+        private object get_13_ProgressBar_ShowPaused(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
+            return that.ShowPaused;
+        }
+        private void set_13_ProgressBar_ShowPaused(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
+            that.ShowPaused = (global::System.Boolean)Value;
+        }
+        private object get_14_ProgressBar_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
+            return that.TemplateSettings;
+        }
+        private object get_15_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_6_TreeViewNode_Content(object instance)
+        private object get_16_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_6_TreeViewNode_Content(object instance, object Value)
+        private void set_16_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_7_TreeViewNode_Depth(object instance)
+        private object get_17_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_8_TreeViewNode_HasChildren(object instance)
+        private object get_18_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_9_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_19_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_9_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_19_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_10_TreeViewNode_IsExpanded(object instance)
+        private object get_20_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_10_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_20_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_11_TreeViewNode_Parent(object instance)
+        private object get_21_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -613,50 +785,118 @@ namespace doorcamPoC.doorcamPoC_XamlTypeInfo
                 xamlMember.Getter = get_4_Color_B;
                 xamlMember.Setter = set_4_Color_B;
                 break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.IsActive":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "IsActive", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_ProgressRing_IsActive;
+                xamlMember.Setter = set_5_ProgressRing_IsActive;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.IsIndeterminate":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_6_ProgressRing_IsIndeterminate;
+                xamlMember.Setter = set_6_ProgressRing_IsIndeterminate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Maximum":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_7_ProgressRing_Maximum;
+                xamlMember.Setter = set_7_ProgressRing_Maximum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Minimum":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_8_ProgressRing_Minimum;
+                xamlMember.Setter = set_8_ProgressRing_Minimum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.TemplateSettings":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings");
+                xamlMember.Getter = get_9_ProgressRing_TemplateSettings;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Value":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "Value", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_10_ProgressRing_Value;
+                xamlMember.Setter = set_10_ProgressRing_Value;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressBar.IsIndeterminate":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_11_ProgressBar_IsIndeterminate;
+                xamlMember.Setter = set_11_ProgressBar_IsIndeterminate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressBar.ShowError":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "ShowError", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_12_ProgressBar_ShowError;
+                xamlMember.Setter = set_12_ProgressBar_ShowError;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressBar.ShowPaused":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "ShowPaused", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_13_ProgressBar_ShowPaused;
+                xamlMember.Setter = set_13_ProgressBar_ShowPaused;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressBar.TemplateSettings":
+                userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
+                xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings");
+                xamlMember.Getter = get_14_ProgressBar_TemplateSettings;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_5_TreeViewNode_Children;
+                xamlMember.Getter = get_15_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_TreeViewNode_Content;
-                xamlMember.Setter = set_6_TreeViewNode_Content;
+                xamlMember.Getter = get_16_TreeViewNode_Content;
+                xamlMember.Setter = set_16_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_TreeViewNode_Depth;
+                xamlMember.Getter = get_17_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_18_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_9_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_9_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_19_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_19_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_10_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_20_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_20_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::doorcamPoC.doorcamPoC_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_11_TreeViewNode_Parent;
+                xamlMember.Getter = get_21_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

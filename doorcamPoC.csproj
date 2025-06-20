@@ -39,6 +39,10 @@
         <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.*" />
         <PackageReference Include="Microsoft.Web.WebView2" Version="1.*" />
         <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.*" />
+        <PackageReference Include="Microsoft.AI.DirectML" Version="1.15.1" />
+        <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.16.3" />
+        <PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.1.2" />
+        <PackageReference Include="CommunityToolkit.WinUI.UI.Media" Version="7.1.2" />
 
         <Manifest Include="$(ApplicationManifest)" />
     </ItemGroup>

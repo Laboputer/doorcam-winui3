@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\hyunj\\Desktop\\doorcam\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|c:\\users\\hyunj\\desktop\\doorcam\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|solutionrelative:views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|c:\\users\\hyunj\\desktop\\doorcam\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,19 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\hyunj\\Desktop\\doorcam\\Views\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Views\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\hyunj\\Desktop\\doorcam\\Views\\MainPage.xaml",
+              "RelativeToolTip": "Views\\MainPage.xaml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAjwCIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-20T04:40:54.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\hyunj\\Desktop\\doorcam\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\hyunj\\Desktop\\doorcam\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T02:00:25.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Imports.cs",
               "DocumentMoniker": "C:\\Users\\hyunj\\Desktop\\doorcam\\Imports.cs",
               "RelativeDocumentMoniker": "Imports.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "Imports.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T02:00:22.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T02:00:22.722Z"
             }
           ]
         }

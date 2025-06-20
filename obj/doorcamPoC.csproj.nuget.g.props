@@ -16,9 +16,18 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.windows.sdk.buildtools\10.0.26100.4188\buildTransitive\Microsoft.Windows.SDK.BuildTools.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.sdk.buildtools\10.0.26100.4188\buildTransitive\Microsoft.Windows.SDK.BuildTools.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.windowsappsdk\1.7.250606001\buildTransitive\Microsoft.WindowsAppSDK.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windowsappsdk\1.7.250606001\buildTransitive\Microsoft.WindowsAppSDK.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.ml.onnxruntime\1.16.3\build\netstandard2.0\Microsoft.ML.OnnxRuntime.props" Condition="Exists('$(NuGetPackageRoot)microsoft.ml.onnxruntime\1.16.3\build\netstandard2.0\Microsoft.ML.OnnxRuntime.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.ai.directml\1.15.1\build\Microsoft.AI.DirectML.props" Condition="Exists('$(NuGetPackageRoot)microsoft.ai.directml\1.15.1\build\Microsoft.AI.DirectML.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">C:\Users\hyunj\.nuget\packages\microsoft.web.webview2\1.0.3296.44</PkgMicrosoft_Web_WebView2>
     <PkgMicrosoft_WindowsAppSDK Condition=" '$(PkgMicrosoft_WindowsAppSDK)' == '' ">C:\Users\hyunj\.nuget\packages\microsoft.windowsappsdk\1.7.250606001</PkgMicrosoft_WindowsAppSDK>
+    <PkgCommunityToolkit_WinUI_UI_Controls_Primitives Condition=" '$(PkgCommunityToolkit_WinUI_UI_Controls_Primitives)' == '' ">C:\Users\hyunj\.nuget\packages\communitytoolkit.winui.ui.controls.primitives\7.1.2</PkgCommunityToolkit_WinUI_UI_Controls_Primitives>
+    <PkgCommunityToolkit_WinUI_UI_Controls_Media Condition=" '$(PkgCommunityToolkit_WinUI_UI_Controls_Media)' == '' ">C:\Users\hyunj\.nuget\packages\communitytoolkit.winui.ui.controls.media\7.1.2</PkgCommunityToolkit_WinUI_UI_Controls_Media>
+    <PkgCommunityToolkit_WinUI_UI_Controls_Core Condition=" '$(PkgCommunityToolkit_WinUI_UI_Controls_Core)' == '' ">C:\Users\hyunj\.nuget\packages\communitytoolkit.winui.ui.controls.core\7.1.2</PkgCommunityToolkit_WinUI_UI_Controls_Core>
+    <PkgCommunityToolkit_WinUI_UI_Controls_Markdown Condition=" '$(PkgCommunityToolkit_WinUI_UI_Controls_Markdown)' == '' ">C:\Users\hyunj\.nuget\packages\communitytoolkit.winui.ui.controls.markdown\7.1.2</PkgCommunityToolkit_WinUI_UI_Controls_Markdown>
+    <PkgCommunityToolkit_WinUI_UI_Controls_Layout Condition=" '$(PkgCommunityToolkit_WinUI_UI_Controls_Layout)' == '' ">C:\Users\hyunj\.nuget\packages\communitytoolkit.winui.ui.controls.layout\7.1.2</PkgCommunityToolkit_WinUI_UI_Controls_Layout>
+    <PkgCommunityToolkit_WinUI_UI_Controls_Input Condition=" '$(PkgCommunityToolkit_WinUI_UI_Controls_Input)' == '' ">C:\Users\hyunj\.nuget\packages\communitytoolkit.winui.ui.controls.input\7.1.2</PkgCommunityToolkit_WinUI_UI_Controls_Input>
+    <PkgCommunityToolkit_WinUI_UI_Controls_DataGrid Condition=" '$(PkgCommunityToolkit_WinUI_UI_Controls_DataGrid)' == '' ">C:\Users\hyunj\.nuget\packages\communitytoolkit.winui.ui.controls.datagrid\7.1.2</PkgCommunityToolkit_WinUI_UI_Controls_DataGrid>
   </PropertyGroup>
 </Project>
