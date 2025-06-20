@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "doorcamPoC (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "doorcamPoC (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

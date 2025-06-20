@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hyunj\\Desktop\\doorcam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|c:\\users\\hyunj\\desktop\\doorcam\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|c:\\users\\hyunj\\desktop\\doorcam\\imports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|solutionrelative:imports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hyunj\\Desktop\\doorcam\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\hyunj\\Desktop\\doorcam\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T02:00:25.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Imports.cs",
+              "DocumentMoniker": "C:\\Users\\hyunj\\Desktop\\doorcam\\Imports.cs",
+              "RelativeDocumentMoniker": "Imports.cs",
+              "ToolTip": "C:\\Users\\hyunj\\Desktop\\doorcam\\Imports.cs",
+              "RelativeToolTip": "Imports.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T02:00:22.722Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
