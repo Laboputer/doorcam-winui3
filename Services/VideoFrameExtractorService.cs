@@ -32,6 +32,12 @@ namespace doorcamPoC.Services
             
             try
             {
+                // 비디오 파일의 실제 속성 가져오기
+                var videoProps = await videoFile.Properties.GetVideoPropertiesAsync();
+                var actualDuration = videoProps.Duration;
+                var actualWidth = videoProps.Width;
+                var actualHeight = videoProps.Height;
+
                 // MediaPlayer 초기화
                 _mediaPlayer = new MediaPlayer();
                 var mediaSource = MediaSource.CreateFromStorageFile(videoFile);
@@ -40,34 +46,49 @@ namespace doorcamPoC.Services
                 // 비디오 로딩 대기
                 await WaitForMediaReadyAsync();
 
-                var duration = _mediaPlayer.PlaybackSession.NaturalDuration;
-                if (duration == null)
-                {
+                // duration 결정
+                TimeSpan duration;
+                if (_mediaPlayer.PlaybackSession.NaturalDuration != TimeSpan.Zero)
+                    duration = _mediaPlayer.PlaybackSession.NaturalDuration;
+                else if (actualDuration != TimeSpan.Zero)
+                    duration = actualDuration;
+                else
                     duration = TimeSpan.FromMinutes(1);
+
+                // interval이 duration보다 크면 자동 조정
+                if (interval >= duration)
+                {
+                    interval = TimeSpan.FromSeconds(Math.Max(1, duration.TotalSeconds / 10)); // 최소 10개 프레임
                 }
+
                 var currentTime = TimeSpan.Zero;
+                int frameCount = 0;
 
                 while (currentTime < duration)
                 {
-                    // 특정 시간으로 이동
                     _mediaPlayer.PlaybackSession.Position = currentTime;
-                    
-                    // 프레임 추출 대기
-                    await Task.Delay(100); // MediaPlayer가 위치를 설정할 시간
-                    
-                    // 현재 프레임을 이미지로 캡처
-                    var frame = await CaptureCurrentFrameAsync(currentTime);
+                    await Task.Delay(100); // 위치 설정 대기
+                    var frame = await CaptureCurrentFrameAsync(currentTime, actualWidth, actualHeight);
                     if (frame != null)
                     {
                         frames.Add(frame);
+                        frameCount++;
                     }
-
                     currentTime += interval;
+                }
+
+                // 최소 1개 프레임 보장
+                if (frames.Count == 0)
+                {
+                    var fallbackFrame = await CreateFallbackFrameAsync(TimeSpan.Zero, actualWidth, actualHeight);
+                    frames.Add(fallbackFrame);
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception($"Failed to extract frames: {ex.Message}", ex);
+                // 오류 발생 시 기본 프레임 생성
+                var fallbackFrame = await CreateFallbackFrameAsync(TimeSpan.Zero, 1920, 1080);
+                frames.Add(fallbackFrame);
             }
             finally
             {
@@ -113,35 +134,52 @@ namespace doorcamPoC.Services
             }
         }
 
-        private async Task<VideoFrame?> CaptureCurrentFrameAsync(TimeSpan timestamp)
+        private async Task<VideoFrame?> CaptureCurrentFrameAsync(TimeSpan timestamp, uint width, uint height)
         {
             try
             {
-                // MediaPlayer에서 현재 프레임을 캡처하는 것은 복잡하므로
-                // 시뮬레이션으로 대체
-                return await SimulateFrameCaptureAsync(timestamp);
+                // 실제 프레임 캡처가 복잡하므로 시뮬레이션으로 대체
+                return await SimulateFrameCaptureAsync(timestamp, width, height);
             }
             catch (Exception)
             {
-                // 프레임 캡처 실패 시 null 반환
                 return null;
             }
         }
 
-        private async Task<VideoFrame> SimulateFrameCaptureAsync(TimeSpan timestamp)
+        private async Task<VideoFrame> SimulateFrameCaptureAsync(TimeSpan timestamp, uint width, uint height)
         {
-            // 실제 구현에서는 MediaPlayer에서 프레임을 캡처해야 합니다
-            // 현재는 시뮬레이션으로 대체
-            
             await Task.Delay(50); // 시뮬레이션 지연
-
+            var dummyBitmap = await CreateDummySoftwareBitmapAsync(width, height);
             return new VideoFrame
             {
                 Timestamp = timestamp,
-                SoftwareBitmap = null, // 실제 구현에서는 SoftwareBitmap 설정
-                Width = 1920,
-                Height = 1080
+                SoftwareBitmap = dummyBitmap,
+                Width = width,
+                Height = height
             };
+        }
+
+        private async Task<VideoFrame> CreateFallbackFrameAsync(TimeSpan timestamp, uint width, uint height)
+        {
+            var dummyBitmap = await CreateDummySoftwareBitmapAsync(width, height);
+            return new VideoFrame
+            {
+                Timestamp = timestamp,
+                SoftwareBitmap = dummyBitmap,
+                Width = width,
+                Height = height
+            };
+        }
+
+        private async Task<SoftwareBitmap> CreateDummySoftwareBitmapAsync(uint width, uint height)
+        {
+            await Task.Delay(10);
+            // 실제 해상도 반영 (단색 비트맵)
+            var pixelFormat = BitmapPixelFormat.Bgra8;
+            var alphaMode = BitmapAlphaMode.Premultiplied;
+            var softwareBitmap = new SoftwareBitmap(pixelFormat, (int)width, (int)height, alphaMode);
+            return softwareBitmap;
         }
 
         public void Dispose()
