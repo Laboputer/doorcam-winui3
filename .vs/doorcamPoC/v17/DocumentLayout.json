@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\hyunj\\Desktop\\doorcam\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|c:\\users\\hyunj\\desktop\\doorcam\\services\\videoanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|solutionrelative:services\\videoanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|c:\\users\\hyunj\\desktop\\doorcam\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4AAB8495-FA06-4E67-8C0C-8F5CFA99CBED}|doorcamPoC.csproj|solutionrelative:views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "VideoAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\hyunj\\Desktop\\doorcam\\Services\\VideoAnalysisService.cs",
+              "RelativeDocumentMoniker": "Services\\VideoAnalysisService.cs",
+              "ToolTip": "C:\\Users\\hyunj\\Desktop\\doorcam\\Services\\VideoAnalysisService.cs",
+              "RelativeToolTip": "Services\\VideoAnalysisService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAEMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T04:41:55.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\hyunj\\Desktop\\doorcam\\Views\\MainPage.xaml",
               "RelativeDocumentMoniker": "Views\\MainPage.xaml",
@@ -39,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\hyunj\\Desktop\\doorcam\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -52,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Imports.cs",
               "DocumentMoniker": "C:\\Users\\hyunj\\Desktop\\doorcam\\Imports.cs",
               "RelativeDocumentMoniker": "Imports.cs",

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("doorcamPoC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb44554fcb12be8d064878d8161178c72eac8152")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae4d077cb35b9842e40732ca61aab1d7e77ffaed")]
 [assembly: System.Reflection.AssemblyProductAttribute("doorcamPoC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("doorcamPoC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
